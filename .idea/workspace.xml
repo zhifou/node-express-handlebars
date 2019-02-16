@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5815be4-a716-4e2b-b226-4c35405ee5e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/readme.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/readme.handlebars" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,14 +25,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="BCLOUD" value="1" />
           <entry key="gitignore" value="1" />
+          <entry key="handlebars" value="2" />
           <entry key="js" value="9" />
+          <entry key="json" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Handlebars/Mustache" value="2" />
+          <entry key="JSON" value="2" />
           <entry key="JavaScript" value="9" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -52,6 +56,32 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="44" lean-forward="true" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/readme.handlebars">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+              <folding>
+                <element signature="e#3397#3401#0#HTML" expanded="true" />
+                <element signature="e#3748#3752#1#HTML" expanded="true" />
+                <element signature="e#3930#3934#1#HTML" expanded="true" />
+                <element signature="e#3989#3993#0#HTML" expanded="true" />
+                <element signature="e#4026#4030#1#HTML" expanded="true" />
+                <element signature="e#4610#4614#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.handlebars">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -72,19 +102,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configs/mapiConfiguration.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="30">
+              <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -98,6 +133,14 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>baidu</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -107,6 +150,7 @@
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/configs/mapiConfiguration.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/views/readme.handlebars" />
       </list>
     </option>
   </component>
@@ -116,13 +160,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -171,6 +215,11 @@
             <path>
               <item name="node-express-handlebars" type="b2602c69:ProjectViewProjectNode" />
               <item name="node-express-handlebars" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="node-express-handlebars" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-express-handlebars" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -215,12 +264,12 @@
       <option name="presentableId" value="Default" />
       <updated>1550324307631</updated>
       <workItem from="1550324309267" duration="644000" />
-      <workItem from="1550325445943" duration="89000" />
+      <workItem from="1550325445943" duration="446000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="733000" />
+    <option name="totallyTimeSpent" value="1090000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1232" height="777" extended-state="0" />
@@ -256,9 +305,6 @@
     <entry file="file://$PROJECT_DIR$/routes/api/index.js" />
     <entry file="file://$PROJECT_DIR$/controllers/api/index.js" />
     <entry file="file://$PROJECT_DIR$/configs/aliyunConfiguration.js" />
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/mapi/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -276,17 +322,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configs/mapiConfiguration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/BCLOUD">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="44" lean-forward="true" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/mapiConfiguration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.handlebars">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/readme.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#3397#3401#0#HTML" expanded="true" />
+            <element signature="e#3748#3752#1#HTML" expanded="true" />
+            <element signature="e#3930#3934#1#HTML" expanded="true" />
+            <element signature="e#3989#3993#0#HTML" expanded="true" />
+            <element signature="e#4026#4030#1#HTML" expanded="true" />
+            <element signature="e#4610#4614#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
