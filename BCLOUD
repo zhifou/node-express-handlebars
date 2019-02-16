@@ -1,1 +1,0 @@
-BUILD_SUBMITTER -x -m baidu/lbs-place/husky -c "cd baidu/lbs-place/husky && mkdir output &&cp BCLOUD ./output/" -u ./
