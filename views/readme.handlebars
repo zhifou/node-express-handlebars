@@ -1,0 +1,134 @@
+<div class="docx-marked">
+    <h1 id="-">文档说明</h1>
+    <p>该文档全部源码托管在 <a href="http://gitlab.baidu.com/psfe/psdoc">gitlab-psdoc</a> 上，任何文档问题可提 <a href="http://gitlab.baidu.com/psfe/psdoc/issues/new">issues</a></p>
+    <h2 id="-">参与编写</h2>
+    <ol>
+        <li><a href="http://sfe.baidu.com/psdoc.md#1">安装配置git</a></li>
+        <li><a href="http://sfe.baidu.com/psdoc.md#2">添加权限</a></li>
+        <li><a href="http://sfe.baidu.com/psdoc.md#3">编写文档</a></li>
+        <li><a href="http://sfe.baidu.com/psdoc.md#4">编写规范</a></li>
+        <li><a href="http://sfe.baidu.com/psdoc.md#5">目录结构</a></li>
+    </ol>
+    <p>
+        <a name="1" id="1"></a>
+    </p>
+    <h3 id="-git">配置git</h3>
+    <p>安装 <a href="http://www.git-scm.com/download/">git客户端</a>，生成<code>ssh-key</code>，如：</p>
+    <pre><code class="lang-shell">git config --global user<span class="hljs-selector-class">.name</span> <span class="hljs-string">"你的用户名"</span>
+git config --global user<span class="hljs-selector-class">.email</span> <span class="hljs-string">"你的邮箱"</span>
+ssh-keygen -t rsa -C <span class="hljs-string">"你的邮箱"</span>
+</code></pre>
+    <p>申请内网 <a href="http://gitlab.baidu.com/">gitlab</a> 帐号</p>
+    <p>打开 <a href="http://gitlab.baidu.com/profile/keys">keys</a> 配置页面，并添加<code>key</code>为你<code>~/.ssh/id_rsa.pub</code>文件的内容，至此就可以使用<code>ssh</code>的方式操作你所属的<code>gitlab</code>项目了</p>
+    <blockquote>
+        <p>ps: 当然你完全可以使用<code>http</code>方式，可使用<code>git config credential.helper 'cache --timeout=36000000'</code>记住密码，但推荐使用<code>ssh</code>方式</p>
+    </blockquote>
+    <p>
+        <a name="2" id="2"></a>
+    </p>
+    <h3 id="-">添加权限</h3>
+    <p>可联系@吴忧、@王俊杰、@刘悦、@李浪波添加你<code>gitlab</code>到<code>ps-fe</code>组内，就具有<code>push</code>文档的权限。</p>
+    <p>
+        <a name="3" id="3"></a>
+    </p>
+    <h3 id="-">编写文档</h3>
+    <p>使用<code>git clone ssh://g@gitlab.baidu.com:8022/psfe/psdoc.git</code>克隆出项目后，可修改，完成后可提交并推送，如：</p>
+    <pre><code class="lang-shell">git clone ssh://g@gitlab.baidu.<span class="hljs-keyword">com</span>:<span class="hljs-number">8022</span>/psfe/psdoc.git
+<span class="hljs-keyword">cd</span> psdoc
+<span class="hljs-keyword">vim</span> readme.md
+...
+git <span class="hljs-built_in">add</span> -A
+git commit -<span class="hljs-keyword">m</span> 更新文档说明
+git push
+</code></pre>
+    <p>当推送（<code>push</code>）后，网站会自动更新为最新内容。</p>
+    <blockquote>
+        <p>ps: 修改前最好<code>git pull</code>更新下，以防冲突，<a href="http://www.bootcss.com/p/git-guide/">git简单使用说明</a></p>
+    </blockquote>
+    <p>
+        <a name="4" id="4"></a>
+    </p>
+    <h3 id="-">编写规范</h3>
+    <ul>
+        <li><code>md</code>文档必须使用的<code>markdown</code>语法，详情可看：<a href="https://guides.github.com/features/mastering-markdown/">markdown说明</a> 或者 <a href="https://www.baidu.com/s?wd=markdown%20%E8%AF%AD%E6%B3%95&amp;rsv_spt=1&amp;issp=1&amp;f=8&amp;rsv_bp=0&amp;rsv_idx=2&amp;ie=utf-8&amp;tn=baiduhome_pg&amp;rsv_enter=1&amp;rsv_sug3=8&amp;rsv_sug1=7&amp;rsv_t=26c4BT8iGf3YBtIDso06s7HP8vE2w91mkdQ4Yt5m6A7dm9cEAD6G%2Bpgvr1lLUxUzChvO&amp;sug=markdown%20%E8%AF%AD%E6%B3%95&amp;rsv_n=1">百度搜索markdown语法</a>,支持Markdown
+            Extra语法:
+            <a href="https://michelf.ca/projects/php-markdown/extra/">markdown extra介绍</a>,js/css/html...代码高亮，建议使用markdown extra里面的Fenced Code Blocks 方式.</li>
+        <li>目前只支持<code>.md</code>、<code>.html</code>、<code>.htm</code>文件</li>
+        <li>目录名<em>必须使用英文</em>，可选择<code>map.json</code>做<code>英=&gt;中</code>的映射</li>
+        <li>文件名<em>必须使用英文</em>，网站中目录树是抓取的 <code>md</code>文档内第1个<code># x</code>标题、<code>html</code>文档的<code>title</code></li>
+        <li>文件、目录统一用小写字母，摘自<a href="http://gitlab.baidu.com/gitlabhq/gitlabhq/wikis/Faq">gitlab faq</a></li>
+        <li>可自行添加锚点，如：</li>
+    </ul>
+    <pre><code><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"h1"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"h1"</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
+
+[<span class="hljs-string">h1</span>](<span class="hljs-link">#h1</span>)
+</code></pre>
+    <ul>
+        <li>使用的图片、链接的相对路径为当前文件</li>
+        <li><strong>图片的路径</strong>问题，所有图片必须在需要放在文档目录的平级别的<code>img/文档名称/xxx.jpg</code><pre><code>比如：tools/passport.md文档
+图片资源目录：tools/img/passport/
+引用直接相对路径，比如：![<span class="hljs-string">passport代码调试</span>](<span class="hljs-link">img/passport/passport.png</span>)
+</code></pre></li>
+        <li><code>md</code>文档内必须包含以下格式：</li>
+    </ul>
+    <pre><code><span class="hljs-section"># 我是大标题，会显示在目录树上</span>
+<span class="hljs-quote">&gt; 我是作者的邮箱</span>
+</code></pre>
+    <p>
+        <a name="5" id="5"></a>
+    </p>
+    <hr>
+    <h2 id="changelog">changelog</h2>
+    <h3 id="2016-10-16">2016-10-16</h3>
+    <ul>
+        <li>文档平台升级:
+            <ul>
+                <li>配置文件抽离</li>
+                <li>添加访问日志（access、error）</li>
+                <li>支持hook入口脚本定制</li>
+                <li>添加错误页</li>
+                <li>支持主题定制</li>
+                <li>safari动画兼容</li>
+                <li>点击url之后导航</li>
+                <li>同级文档与文件夹区分</li>
+            </ul>
+        </li>
+    </ul>
+    <h3 id="2016-09-26">2016-09-26</h3>
+    <ul>
+        <li>修改文档结构</li>
+        <li>重构文档平台,后端改为node
+            <ul>
+                <li>新文档结构，更好的文档归类，以适用于之后迁移PC文档和不断添加的其他文档</li>
+                <li>新文档平台，提高易用性，可控性。</li>
+                <li>更好的扩展性，文档目录顺序，友链，均可配置。</li>
+                <li>增加常用文档，提供更快定位文档的方式。</li>
+            </ul>
+        </li>
+    </ul>
+    <h3 id="2015-09-25">2015-09-25</h3>
+    <ul>
+        <li>修改<code>md</code>文档主题</li>
+        <li>修改<code>md</code>文档里的链接跳转，目前支持：
+            <ul>
+                <li>外部链接: <code>[百度](https://www.baidu.com/)</code></li>
+                <li><code>sfe</code>平台内部文档直接跳转，可以直接通过路径文档的git路径进行，比如跳转到：<a href="http://sfe.baidu.com/tools/passport.md">passport</a></li>
+                <li>文档内部锚点: <code>[锚点](#test1)</code>，注意，需要自己写锚点<code>&lt;a name="test1" id="test1"&gt;&lt;/a&gt;</code></li>
+                <li>文档相对路径跳转: <code>[传送门](linux/test.md)</code></li>
+            </ul>
+        </li>
+    </ul>
+    <h3 id="2015-09-22">2015-09-22</h3>
+    <ul>
+        <li><code>.md</code>文档支持<strong>快捷导航</strong></li>
+        <li>添加支持<code>.html</code>文档</li>
+        <li>左侧导航不抓取空目录（目录内无<code>.md</code>、<code>.html</code>）</li>
+        <li>添加右上角文档纲要导航</li>
+    </ul>
+    <h3 id="2015-09-21">2015-09-21</h3>
+    <ul>
+        <li>从<code>ws</code>迁移文档</li>
+        <li>添加<code>map.php</code>中英文映射</li>
+    </ul>
+
+</div>

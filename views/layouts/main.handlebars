@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Huskey系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link type="text/css" rel="stylesheet" href="/static/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/metisMenu.min.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/md.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/doc.css">
+</head>
+
+<body>
+<div class="docx-wrapper">
+    <div class="docx-body clearfix" style="height: 866px;">
+        <nav class="navbar navbar-inverse navbar-fixed-top docx-navbar">
+        {{>header}}
+        </nav>
+        <div id="sidebar-collapse" class="col-sm-3 col-lg-3 sidebar" role="navigation">
+        {{>sidebar}}
+        </div>
+        <!--/.sidebar-->
+
+        <div class="col-sm-9 col-sm-offset-3 col-lg-9 col-lg-offset-3 main docx-marked-wrap container-fluid">
+            <div class="row" style="">
+                <ol class="breadcrumb">
+                    <li>Husky</li>
+                </ol>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 docx-fade docx-fade-active">
+                    <div class="docx-panel docx-panel-default">
+                        <div class="markdown-body">
+                            {{{body}}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.main-->
+    </div>
+</div>
+
+<script src="./static/js/jquery.min.js"></script>
+<script src="./static/js/bootstrap.min.js"></script>
+<script src="./static/js/metisMenu.min.js"></script>
+<script src="./static/js/jq.pjax.js"></script>
+<script src="./static/js/doc.js"></script>
+
+</body>
+
+</html>
